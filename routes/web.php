@@ -22,21 +22,16 @@ Route::get('/', [KantorController::class, 'index']);
 /**
  * Show create todo form
  */
-Route::get('/kantors/create', [KantorController::class, 'create']);
 
 /**
  * Add Todo
  */
 Route::post('/kantors', [KantorController::class, 'store']);
-
-
-
-
-
 Route::prefix('kantor')->group(function () {
     Route::get('/{id}/edit', [KantorController::class, 'edit']);
     Route::get('/{id}/delete', [KantorController::class, 'deleteData']);
     Route::post('/{id}/update', [KantorController::class, 'updateData'])->name('kantor-update');
+    Route::get('/create', [KantorController::class, 'create']);
 });
 
 

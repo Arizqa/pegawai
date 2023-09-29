@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Data Kantor</div>
                 <div class="panel-body">
-                    <a href="{{ url('kantors/create') }}" class="btn btn-primary">Tambah Data Kantor</a>
+                    <a href="{{ url('kantor/create') }}" class="btn btn-primary">Tambah Data Kantor</a>
 
                     <br>
                     <br>
